@@ -31,7 +31,7 @@ class ProjectTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setProjectCell(withTitle title: String, description: String) {
+    func setProjectCell(withTitle title: String, description: String?) {
         titleLabel.text = title
         descriptionLabel.text = description
     }
