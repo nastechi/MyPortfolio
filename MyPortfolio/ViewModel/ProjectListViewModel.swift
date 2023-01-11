@@ -5,7 +5,8 @@
 //  Created by Анастасия on 10.01.2023.
 //
 
-import Foundation
+import UIKit
+import CoreData
 
 struct ProjectListViewModel {
     
@@ -13,7 +14,16 @@ struct ProjectListViewModel {
     var projectList: ProjectList?
     
     func fetchData() {
-        projectList?.projects.value?.append(Project(name: "MyPortfolio", description: "This is an IOS app to list your projects. I used UIKit and MVVM."))
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request: NSFetchRequest<ProjectModel> = ProjectModel.fetchRequest()
+        
+        do {
+            projectList?.projects.value = try context.fetch(request)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     func addButtonPressed() {

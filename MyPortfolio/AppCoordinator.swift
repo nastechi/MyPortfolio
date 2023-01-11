@@ -28,7 +28,6 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        print("Coordinator started")
         goToProjectListPage()
         navigationController.isNavigationBarHidden = true
     }

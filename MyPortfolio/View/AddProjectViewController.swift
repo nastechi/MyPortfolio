@@ -71,9 +71,9 @@ class AddProjectViewController: UIViewController {
     @objc private func saveButtonPressed() {
         if let name = nameTextField.text, !name.isEmpty {
             if descriptionTextView.text == "description" {
-                descriptionTextView.text = nil
+                descriptionTextView.text = ""
             }
-            viewModel?.addProject(withName: name, description: descriptionTextView.text)
+            viewModel?.addButtonPressed(projectName: name, description: descriptionTextView.text)
         }
     }
     

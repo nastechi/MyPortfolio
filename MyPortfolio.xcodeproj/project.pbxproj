@@ -11,13 +11,16 @@
 		092A104A296D24D700049DFA /* ProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A1049296D24D700049DFA /* ProjectListViewController.swift */; };
 		092A104F296D24DA00049DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092A104E296D24DA00049DFA /* Assets.xcassets */; };
 		092A1052296D24DA00049DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092A1050296D24DA00049DFA /* LaunchScreen.storyboard */; };
-		092A105A296D253000049DFA /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A1059296D253000049DFA /* Project.swift */; };
+		092A105A296D253000049DFA /* ProjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A1059296D253000049DFA /* ProjectList.swift */; };
 		092A105C296D342900049DFA /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A105B296D342900049DFA /* Observable.swift */; };
 		092A105E296D651800049DFA /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A105D296D651800049DFA /* ProjectListViewModel.swift */; };
 		09D39B3D296E97AA0078EC1A /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D39B3C296E97AA0078EC1A /* ProjectTableViewCell.swift */; };
 		09D39B42296EA7190078EC1A /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D39B41296EA7190078EC1A /* AddProjectViewController.swift */; };
 		09D39B44296EA8810078EC1A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D39B43296EA8810078EC1A /* AppCoordinator.swift */; };
 		09D39B46296EB6250078EC1A /* AddProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D39B45296EB6250078EC1A /* AddProjectViewModel.swift */; };
+		09D39B48296ED2F90078EC1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D39B47296ED2F90078EC1A /* LoginViewController.swift */; };
+		09D39B4A296ED3200078EC1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D39B49296ED3200078EC1A /* RegisterViewController.swift */; };
+		09D39B50296ED46C0078EC1A /* ProjectModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09D39B4E296ED46C0078EC1A /* ProjectModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +30,16 @@
 		092A104E296D24DA00049DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		092A1051296D24DA00049DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		092A1053296D24DA00049DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		092A1059296D253000049DFA /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		092A1059296D253000049DFA /* ProjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectList.swift; sourceTree = "<group>"; };
 		092A105B296D342900049DFA /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		092A105D296D651800049DFA /* ProjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewModel.swift; sourceTree = "<group>"; };
 		09D39B3C296E97AA0078EC1A /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		09D39B41296EA7190078EC1A /* AddProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
 		09D39B43296EA8810078EC1A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		09D39B45296EB6250078EC1A /* AddProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewModel.swift; sourceTree = "<group>"; };
+		09D39B47296ED2F90078EC1A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		09D39B49296ED3200078EC1A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		09D39B4F296ED46C0078EC1A /* ProjectModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +97,8 @@
 		09D39B3F296EA51C0078EC1A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				092A1059296D253000049DFA /* Project.swift */,
+				092A1059296D253000049DFA /* ProjectList.swift */,
+				09D39B4E296ED46C0078EC1A /* ProjectModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +106,8 @@
 		09D39B40296EA5250078EC1A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09D39B47296ED2F90078EC1A /* LoginViewController.swift */,
+				09D39B49296ED3200078EC1A /* RegisterViewController.swift */,
 				09D39B3C296E97AA0078EC1A /* ProjectTableViewCell.swift */,
 				092A1049296D24D700049DFA /* ProjectListViewController.swift */,
 				09D39B41296EA7190078EC1A /* AddProjectViewController.swift */,
@@ -177,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D39B46296EB6250078EC1A /* AddProjectViewModel.swift in Sources */,
+				09D39B50296ED46C0078EC1A /* ProjectModel.xcdatamodeld in Sources */,
+				09D39B4A296ED3200078EC1A /* RegisterViewController.swift in Sources */,
 				09D39B42296EA7190078EC1A /* AddProjectViewController.swift in Sources */,
 				092A104A296D24D700049DFA /* ProjectListViewController.swift in Sources */,
 				09D39B3D296E97AA0078EC1A /* ProjectTableViewCell.swift in Sources */,
@@ -184,7 +195,8 @@
 				092A1046296D24D700049DFA /* AppDelegate.swift in Sources */,
 				09D39B44296EA8810078EC1A /* AppCoordinator.swift in Sources */,
 				092A105E296D651800049DFA /* ProjectListViewModel.swift in Sources */,
-				092A105A296D253000049DFA /* Project.swift in Sources */,
+				09D39B48296ED2F90078EC1A /* LoginViewController.swift in Sources */,
+				092A105A296D253000049DFA /* ProjectList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +404,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09D39B4E296ED46C0078EC1A /* ProjectModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09D39B4F296ED46C0078EC1A /* ProjectModel.xcdatamodel */,
+			);
+			currentVersion = 09D39B4F296ED46C0078EC1A /* ProjectModel.xcdatamodel */;
+			path = ProjectModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 092A103A296D24D700049DFA /* Project object */;
 }

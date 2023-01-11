@@ -78,7 +78,7 @@ extension ProjectListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProjectTableViewCell
         if let project = viewModel?.projectList?.projects.value?[indexPath.row] {
-            cell.setProjectCell(withTitle: project.name, description: project.description)
+            cell.setProjectCell(withTitle: project.name!, description: project.desc)
         }
         return cell
     }
