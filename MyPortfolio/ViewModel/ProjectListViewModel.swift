@@ -10,11 +10,10 @@ import Foundation
 struct ProjectListViewModel {
     
     var appCoordinator: AppCoordinator?
-    
-    var projects: Observable<[Project]> = Observable([])
+    var projectList: ProjectList?
     
     func fetchData() {
-        projects.value?.append(Project(name: "Nastechi", description: "vs MVVM"))
+        projectList?.projects.value?.append(Project(name: "MyPortfolio", description: "This is an IOS app to list your projects. I used UIKit and MVVM."))
     }
     
     func addButtonPressed() {

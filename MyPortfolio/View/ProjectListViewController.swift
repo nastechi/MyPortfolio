@@ -27,7 +27,7 @@ class ProjectListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel?.projects.bind { [weak self] _ in
+        viewModel?.projectList?.projects.bind { [weak self] _ in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
@@ -72,12 +72,12 @@ class ProjectListViewController: UIViewController {
 extension ProjectListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel?.projects.value?.count ?? 0
+        viewModel?.projectList?.projects.value?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProjectTableViewCell
-        if let project = viewModel?.projects.value?[indexPath.row] {
+        if let project = viewModel?.projectList?.projects.value?[indexPath.row] {
             cell.setProjectCell(withTitle: project.name, description: project.description)
         }
         return cell

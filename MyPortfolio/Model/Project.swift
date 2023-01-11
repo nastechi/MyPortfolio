@@ -11,3 +11,7 @@ struct Project: Codable {
     let name: String
     var description: String?
 }
+
+class ProjectList {
+    var projects: Observable<[Project]> = Observable([])
+}
